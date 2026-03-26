@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Modal Realista</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #2b2d31;
+}
+
+/* OVERLAY OSCURO */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MODAL */
+.modal {
+    width: 440px;
+    background: #3a3d41;
+    border-radius: 10px;
+    padding: 24px;
+    color: #dcddde;
+    text-align: center;
+
+    box-shadow: 
+        0 8px 24px rgba(0,0,0,0.6),
+        0 0 0 1px rgba(255,255,255,0.03);
+
+    animation: fadeUp 0.35s ease;
+}
+
+/* HEADER */
+.modal h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+/* DIVISOR */
+.divider {
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    margin: 16px 0 18px;
+}
+
+/* TEXTO */
+.modal p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #b5bac1;
+    margin: 0;
+}
+
+/* ICONO */
+.icon {
+    margin: 22px 0;
+    font-size: 64px;
+    color: #f0a43a;
+    text-shadow: 0 0 12px rgba(240,164,58,0.6);
+}
+
+/* BOTÓN */
+.btn {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    background: #e3e5e8;
+    color: #2b2d31;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.btn:hover {
+    background: #cfd2d6;
+}
+
+/* FOCUS */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(88,101,242,0.6);
+}
+
+/* ANIMACIÓN */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="overlay">
+    <div class="modal">
+        
+        <h1>Error</h1>
+
+        <div class="divider"></div>
+
+        <p>
+            Acción restringida. Esta cuenta requiere la autorización de un representante 
+            para interactuar con nuevos usuarios. Por favor, revisa la configuración 
+            de controles parentales.
+        </p>
+
+        <div class="icon">⚠️</div>
+
+        <button class="btn">OK</button>
+
+    </div>
+</div>
+
+</body>
+</html>
