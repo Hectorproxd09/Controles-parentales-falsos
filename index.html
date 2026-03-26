@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Modal Realista</title>
+<title>Modal 400px</title>
 
 <style>
 body {
@@ -11,7 +11,7 @@ body {
     background: #2b2d31;
 }
 
-/* OVERLAY OSCURO */
+/* OVERLAY */
 .overlay {
     position: fixed;
     inset: 0;
@@ -24,10 +24,10 @@ body {
 
 /* MODAL */
 .modal {
-    width: 440px;
+    width: 400px;
     background: #3a3d41;
     border-radius: 10px;
-    padding: 24px;
+    padding: 20px;
     color: #dcddde;
     text-align: center;
 
@@ -41,22 +41,21 @@ body {
 /* HEADER */
 .modal h1 {
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: #ffffff;
-    text-shadow: 0 0 8px rgba(0,0,0,0.8);
 }
 
 /* DIVISOR */
 .divider {
     height: 1px;
     background: rgba(255,255,255,0.08);
-    margin: 16px 0 18px;
+    margin: 14px 0 16px;
 }
 
 /* TEXTO */
 .modal p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
     color: #b5bac1;
     margin: 0;
@@ -64,16 +63,16 @@ body {
 
 /* ICONO */
 .icon {
-    margin: 22px 0;
-    font-size: 64px;
+    margin: 20px 0;
+    font-size: 60px;
     color: #f0a43a;
-    text-shadow: 0 0 12px rgba(240,164,58,0.6);
+    text-shadow: 0 0 10px rgba(240,164,58,0.6);
 }
 
 /* BOTÓN */
 .btn {
     width: 100%;
-    height: 38px;
+    height: 36px;
     border: none;
     border-radius: 6px;
     background: #e3e5e8;
@@ -118,19 +117,3 @@ body {
         <h1>Error</h1>
 
         <div class="divider"></div>
-
-        <p>
-            Acción restringida. Esta cuenta requiere la autorización de un representante 
-            para interactuar con nuevos usuarios. Por favor, revisa la configuración 
-            de controles parentales.
-        </p>
-
-        <div class="icon">⚠️</div>
-
-        <button class="btn">OK</button>
-
-    </div>
-</div>
-
-</body>
-</html>
